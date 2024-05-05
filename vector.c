@@ -31,11 +31,12 @@ int main(){
 }
 
 
-int addValuesVector(int vector[], int size){
+void addValuesVector(){
     
+    int vector[3];
     int i;
 
-    for(i = 0; i < size; i++){
+    for(i = 0; i < 3; i++){
 
         printf("Enter a number: \n");
 
@@ -43,5 +44,4 @@ int addValuesVector(int vector[], int size){
 
     }
 
-    return vector;
 }

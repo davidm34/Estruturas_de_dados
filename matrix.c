@@ -13,18 +13,22 @@ int main(){
 }
 
 
-int addValuesMatrix(){
-
-    int matrix[2][2];
+void addValuesMatrix(){
+    
+    int matrix[3][3];
     int i;
+    int j;
 
-    for(i = 0; i < 2; i++){
+    for(i = 0; i < 3; i++){
 
-        printf("Enter a number: \n");
+        for(j = 0; j < 3; j++){
 
-        scanf("%d\n", &vector[i]);
+            printf("Enter a number: \n");
 
+            scanf("%d\n", &matrix[i][j]);   
+
+        }
+            
     }
 
-    return vector;
 }
