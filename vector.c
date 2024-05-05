@@ -16,6 +16,8 @@ int main(){
     // Fourth method in which only takes valid positions
     int vector4[5] = {1, 2, 3, 4, 5, 6};
 
+    // Fill the vector with 0
+    int vector5[5] = {0};
 
     // Caracters
 
