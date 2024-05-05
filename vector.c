@@ -29,3 +29,19 @@ int main(){
 
 
 }
+
+
+int addValuesVector(int vector[], int size){
+    
+    int i;
+
+    for(i = 0; i < size; i++){
+
+        printf("Enter a number: \n");
+
+        scanf("%d\n", &vector[i]);
+
+    }
+
+    return vector;
+}
