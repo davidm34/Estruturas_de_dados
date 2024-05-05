@@ -27,7 +27,7 @@ int main(){
     // Second Method
     char vogal[5] = {'a', 'e', 'i', 'o', 'u'};
 
-
+    return 0;
 }
 
 
