@@ -28,9 +28,26 @@ Node* push(Node *top, int content){
 }
 
 
+Node* pop(Node **top){
+
+    if (top) {
+
+        Node *remove = *top;
+        *top = remove->next;
+        return remove;
+    }
+    else {
+        printf("\nEmpty stack\n");
+    }
+    return NULL;
+}
+
+
+
+
 int main(){
 
-    Node *top = NULL;
+    Node *top, *remove = NULL;
     int option;
     int num;
 
@@ -41,8 +58,7 @@ int main(){
         scanf("%d", &option);
         getchar();
 
-        switch (option)
-        {
+        switch (option) {
         case 1:
 
             printf("Enter a number: \n");
@@ -50,6 +66,9 @@ int main(){
             top = push(top, num);
             break;
         
+        case 2:
+            remove = pop(&top);
+            break;
         default:
             if (option != 0){
                 printf("Invalid number!\n");
