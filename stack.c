@@ -44,6 +44,15 @@ Node* pop(Node **top){
 
 
 
+void print_stack(Node *top){
+
+    while(top){
+        printf("\nNumber: %d\n", top->number);
+        top = top->next;
+    }
+
+}
+
 
 int main(){
 
@@ -54,7 +63,7 @@ int main(){
 
     do {
         
-        printf("\n0 - Exit\n1 - Push\n2 - Pop\n");
+        printf("\n0 - Exit\n1 - Push\n2 - Pop\n3- Print\n");
         scanf("%d", &option);
         getchar();
 
@@ -68,6 +77,14 @@ int main(){
         
         case 2:
             remove = pop(&top);
+            if (top){
+                printf("\nElement remove: %d\n", remove->number);
+            } else {
+                printf("\nEmpty Stack!\n");
+            }
+            break;
+        case 3:
+            print_stack(top);
             break;
         default:
             if (option != 0){
